@@ -5,7 +5,7 @@ import org.infinispan.protostream.annotations.ProtoFactory;
 import org.infinispan.protostream.annotations.ProtoField;
 
 public class Sheep {
-   @ProtoField(number = 1, required = true)
+   @ProtoField(number = 1, required = true, defaultValue = "0")
    int id;
    @ProtoField(number = 2)
    String name;
@@ -17,7 +17,7 @@ public class Sheep {
    Sheep(){}
 
    @ProtoFactory
-   public Sheep(int id, String name, Gender gender, int age) {
+   public Sheep(int id, String name, Gender gender, Integer age) {
       this.id = id;
       this.name = name;
       this.gender = gender;

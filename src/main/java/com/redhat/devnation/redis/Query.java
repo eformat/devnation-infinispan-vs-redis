@@ -22,7 +22,8 @@ public class Query {
          store(redis, new Sheep(3, "Timmy", Gender.MALE, 1));
          store(redis, new Sheep(4, "Nuts", Gender.MALE, 6));
 
-         redis.zrangebyscore("user_age", Range.create(4, 7)).forEach(System.out::println);
+         //redis.zrangebyscore("user_age", Range.create(4, 7)).forEach(System.out::println);
+         redis.zrangebyscore("user_age", Range.create(4,7)).stream().map(k -> redis.hgetall(k)).forEach(System.out::println);
 
       }
       client.shutdown();
