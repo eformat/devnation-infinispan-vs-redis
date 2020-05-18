@@ -25,8 +25,7 @@ bash-4.4$ exit
 
 Test CLI
 ```bash
-podman exec -it ispn1 /bin/bash
-bash-4.4$ /opt/infinispan/bin/cli.sh
+podman exec -it ispn1 /opt/infinispan/bin/cli.sh
 [disconnected]> connect http://127.0.0.1:11222
 Username: admin
 Password: *****
