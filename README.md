@@ -44,3 +44,11 @@ Test HTTP
 curl --digest -u admin:admin http://localhost:11322/rest/v2/caches/distcache/k2
 curl --digest -u admin:admin http://localhost:11222/rest/v2/caches/distcache/k2
 ```
+
+#### Refs:
+
+- https://infinispan.org/blog/2019/11/11/serverng/
+- https://infinispan.org/blog/tags/server/
+- https://infinispan.org/blog/tags/docker/
+- https://github.com/infinispan/infinispan-images
+- https://gist.github.com/bjalon/315467b91f2208087281896dcf387e08
